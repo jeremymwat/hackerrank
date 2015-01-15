@@ -1,0 +1,5 @@
+breakout: acm.c Makefile
+		clang -ggdb3 -Ispl/include -O0 -std=c99 -Wall -Werror -Wno-unused-variable -o acm acm.c
+
+clean:
+	rm -f *.o core acm

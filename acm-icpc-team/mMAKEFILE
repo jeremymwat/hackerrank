@@ -1,0 +1,5 @@
+acm: acm.c Makefile
+		gcc -o acm acm.c -I -std=c99 -Wall -Werror -Wno-unused-variable
+
+clean:
+	rm -f *.o core acm

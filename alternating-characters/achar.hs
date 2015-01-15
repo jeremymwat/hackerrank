@@ -10,7 +10,7 @@ chew str acc = if str == [] || tail str == [] then acc
 
 main :: IO ()
 main = do
-    n <- readLn :: IO Int
+    n <- getLine
     lineList <- replicateM n getLine
     let
         ans = map (\s -> chew s 0) lineList
