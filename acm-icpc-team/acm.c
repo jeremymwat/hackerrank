@@ -31,9 +31,8 @@ int main() {
     int numberHaving = 0;
     int ntopics = 0;
 
-    int k;
     for (int j = 0; j < N; j++){
-    	for (k = j; k < N; k++) {
+    	for (int k = j; k < N; k++) {
     		ntopics = stringBitAnd(topics[j], topics[k]);
     		if (ntopics == largest)
     			numberHaving++;
@@ -48,8 +47,8 @@ int main() {
 
     // be a good c coder
 
-    for (i = 0;i < N;i++) {
-    	free(topics[i]);
+    for (int l = 0;l < N;l++) {
+    	free(topics[l]);
     }
     return 0;
 }
